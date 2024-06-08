@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-800 p-5 text-white">
+        <h1 class="flex justify-center content-center tracking-tighter text-2xl">Login</h1>
+        <hr class="mt-4">
+        <a href="/register"><button class="bg-blue-600 rounded-md px-3 py-2 flex justify-end mt-4">register</button></a>
+        <div class="mt-4 flex justify-center items-center content-center bg-zinc-800 w-full">
+            <form action="/login" method="post">
+                <input class="block w-80 bg-transparent outline-none border-2 border-blue-400 mt-4 rounded-md px-4 py-2" type="text" name="email" id="" placeholder="Enter you email">
+                <input class="block w-80 bg-transparent outline-none border-2 border-blue-400 mt-4 rounded-md px-4 py-2" type="password" name="password" id="" placeholder="Enter you password">
+                <input class="block cursor-pointer bg-blue-600 outline-none w-32  px-4 py-2 rounded-md mt-4 mb-2" type="submit" id="" value="login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
