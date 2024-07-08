@@ -8,12 +8,13 @@ const userModel = require("./models/user.js");
 const postModel = require("./models/posts.js");
 const upload = require("./config/multerConfig.js");
 const user = require("./models/user.js");
-
+require("dotenv").config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.set("view engine", "ejs");
 // app.set('views', path.join(__dirname, 'components'));
+
 
 app.use(express.static(path.join(__dirname, "public")));
 
