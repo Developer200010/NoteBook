@@ -14,7 +14,7 @@
         </div>
         <div class="flex justify-center flex-col content-center items-center">
             <h1 class="flex justify-center  tracking-tighter text-2xl">update your data, <%= post.user.username %></h1>
-            <form action="/update/<%= post._id %>" method="post">
+            <form action="/user/update/<%= post._id %>" method="post">
                 <textarea class="w-96 h-32 outline-none bg-transparent border-2 border-zinc-600 resize-none bg-transparent rounded-md bg-zinc-600 mt-4 text-white px-3 py-2 " placeholder="what's on your mind!?." name="content" id=""><%= post.content %></textarea>
                 <input class="cursor-pointer block bg-yellow-600 w-32 px-4 py-2 mt-3 rounded-md" type="submit" value="Update">
             </form>   
