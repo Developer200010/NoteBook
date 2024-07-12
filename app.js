@@ -149,6 +149,6 @@ app.get("/logout", function (req, res) {
   res.redirect("/login");
 });
 
-app.listen(8080, function () {
+app.listen(process.env.PORT || 8080, function () {
   console.log("server is running well");
 });
